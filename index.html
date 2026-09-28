@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Roadtrip Côte Ouest USA — Mai 2027</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="app-header">
+    <div class="header-content">
+      <h1><span class="flag">🇺🇸</span> Roadtrip Côte Ouest USA</h1>
+      <p class="subtitle" id="trip-subtitle"></p>
+    </div>
+    <div class="header-stats" id="header-stats"></div>
+  </header>
+
+  <main class="app-main">
+    <section class="map-wrap">
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <footer class="timeline-drawer" id="timeline-drawer">
+    <button class="drawer-handle" id="drawer-toggle" aria-expanded="false" aria-controls="timeline">
+      <span class="drawer-title">🗺️ Étapes du roadtrip</span>
+      <span class="drawer-chevron" id="drawer-chevron">▲</span>
+    </button>
+    <div class="timeline" id="timeline">
+      <!-- injecté par script.js -->
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
