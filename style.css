@@ -301,6 +301,13 @@ body {
   background: var(--panel-alt);
 }
 
+.leaflet-control-attribution {
+  font-size: 9px;
+  padding: 1px 4px;
+  line-height: 1.3;
+  opacity: 0.7;
+}
+
 .popup-title {
   font-weight: 700;
   margin-bottom: 4px;

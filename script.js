@@ -16,7 +16,9 @@
   `;
 
   // --- Map init ---
-  const map = L.map("map", { scrollWheelZoom: true }).setView([37, -116], 5);
+  const map = L.map("map", { scrollWheelZoom: true, attributionControl: false }).setView([37, -116], 5);
+
+  L.control.attribution({ position: "topright" }).addTo(map);
 
   L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", {
     maxZoom: 19,
