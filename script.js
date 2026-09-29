@@ -156,6 +156,7 @@
       card.classList.add("active");
       map.flyTo(steps[idx].coords, 8, { duration: 0.8 });
       markers[idx].openPopup();
+      if (!isDesktop()) closeDrawer();
     });
   });
 
