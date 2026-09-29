@@ -159,13 +159,15 @@
     });
   });
 
-  // Sync map marker click -> highlight card
+  // Sync map marker click -> highlight card (desktop only, sidebar toujours visible)
+  const isDesktop = () => window.matchMedia("(min-width: 821px)").matches;
+
   markers.forEach((marker, idx) => {
     marker.on("click", (e) => {
       if (e.originalEvent) e.originalEvent.stopPropagation();
+      if (!isDesktop()) return;
       cards.forEach((c) => c.classList.remove("active"));
       cards[idx].classList.add("active");
-      openDrawer();
       cards[idx].scrollIntoView({ behavior: "smooth", block: "center" });
     });
   });

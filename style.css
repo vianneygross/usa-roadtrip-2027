@@ -83,11 +83,12 @@ body {
   flex: 1;
   min-height: 0;
   position: relative;
+  display: flex;
 }
 
 .map-wrap {
-  position: absolute;
-  inset: 0;
+  flex: 1;
+  position: relative;
 }
 
 #map {
@@ -96,7 +97,7 @@ body {
   background: #0d0e12;
 }
 
-/* --- Tiroir des étapes (footer dépliable) --- */
+/* --- Mobile : tiroir des étapes en bas, dépliable --- */
 .timeline-drawer {
   position: fixed;
   left: 0;
@@ -119,6 +120,34 @@ body {
 
 .timeline-drawer.expanded {
   max-height: min(64vh, 560px);
+}
+
+/* --- Desktop : sidebar fixe à gauche, toujours visible --- */
+@media (min-width: 821px) {
+  .timeline-drawer {
+    position: static;
+    order: -1;
+    flex: none;
+    width: 380px;
+    min-width: 300px;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    background: var(--panel);
+    border: none;
+    border-right: 1px solid var(--border);
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+  }
+
+  .drawer-handle {
+    display: none;
+  }
+
+  .timeline {
+    max-height: 100%;
+  }
 }
 
 .drawer-handle {
@@ -157,6 +186,8 @@ body {
   padding: 0 14px 14px;
   display: flex;
   flex-direction: column;
+  flex: 1;
+  min-height: 0;
 }
 
 .step-card {

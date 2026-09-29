@@ -18,20 +18,20 @@
   </header>
 
   <main class="app-main">
+    <div class="timeline-drawer" id="timeline-drawer">
+      <button class="drawer-handle" id="drawer-toggle" aria-expanded="false" aria-controls="timeline">
+        <span class="drawer-title">🗺️ Étapes du roadtrip</span>
+        <span class="drawer-chevron" id="drawer-chevron">▲</span>
+      </button>
+      <div class="timeline" id="timeline">
+        <!-- injecté par script.js -->
+      </div>
+    </div>
+
     <section class="map-wrap">
       <div id="map"></div>
     </section>
   </main>
-
-  <footer class="timeline-drawer" id="timeline-drawer">
-    <button class="drawer-handle" id="drawer-toggle" aria-expanded="false" aria-controls="timeline">
-      <span class="drawer-title">🗺️ Étapes du roadtrip</span>
-      <span class="drawer-chevron" id="drawer-chevron">▲</span>
-    </button>
-    <div class="timeline" id="timeline">
-      <!-- injecté par script.js -->
-    </div>
-  </footer>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="data.js"></script>
