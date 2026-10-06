@@ -141,7 +141,7 @@ body {
     overflow: hidden;
   }
 
-  .drawer-handle {
+  .timeline-drawer .drawer-handle {
     display: none;
   }
 
