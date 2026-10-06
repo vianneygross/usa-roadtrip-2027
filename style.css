@@ -148,6 +148,10 @@ body {
   .timeline {
     max-height: 100%;
   }
+
+  .timeline-drawer .timeline {
+    padding-top: 14px;
+  }
 }
 
 .drawer-handle {
