@@ -74,25 +74,25 @@ const TRIP = {
     },
     {
       id: 6,
-      dates: "13 mai",
-      dayLabel: "J8",
+      dates: "13-14 mai",
+      dayLabel: "J8-9",
       title: "Santa Barbara",
-      desc: "Halte californienne en bord de mer.",
+      desc: "Pause californienne en bord de mer : plage, boutiques, restaurants et randonnée.",
       coords: [34.4208, -119.6982],
       driveHours: 3.75,
       driveLabel: "≈ 3h30-4h",
-      hotel: { checkin: "13 mai", checkout: "14 mai", nights: 1 }
+      hotel: { checkin: "13 mai", checkout: "15 mai", nights: 2 }
     },
     {
       id: 7,
-      dates: "14-15 mai",
-      dayLabel: "J9-10",
+      dates: "15 mai",
+      dayLabel: "J10",
       title: "Big Sur",
       desc: "Côte spectaculaire le long de la Highway 1.",
       coords: [36.2704, -121.8081],
       driveHours: 3.5,
       driveLabel: "≈ 3h30",
-      hotel: { checkin: "14 mai", checkout: "16 mai", nights: 2 }
+      hotel: { checkin: "15 mai", checkout: "16 mai", nights: 1 }
     },
     {
       id: 8,
