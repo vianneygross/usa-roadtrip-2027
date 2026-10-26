@@ -18,39 +18,35 @@ const TRIP = {
     },
     {
       id: 2,
-      dates: "7 mai",
-      dayLabel: "J2",
+      dates: "7-8 mai",
+      dayLabel: "J2-3",
       title: "Las Vegas + Valley of Fire",
-      desc: "Détour par le Valley of Fire State Park (roches rouges) avant Las Vegas.",
+      desc: "Valley of Fire State Park (roches rouges) et soirée à Las Vegas. Journée de repos le 8.",
       coords: [36.1699, -115.1398],
       driveHours: 4,
       driveLabel: "≈ 4h",
-      hotel: { checkin: "7 mai", checkout: "8 mai", nights: 1 }
+      hotel: { checkin: "7 mai", checkout: "9 mai", nights: 2 }
     },
     {
       id: 3,
-      dates: "8 mai",
-      dayLabel: "J3",
-      title: "Page, AZ (Horseshoe Bend)",
-      desc: "Le fameux méandre du Colorado en forme de fer à cheval.",
-      coords: [36.9147, -111.4558],
-      driveHours: 4.5,
-      driveLabel: "≈ 4h30",
-      hotel: { checkin: "8 mai", checkout: "9 mai", nights: 1 }
-    },
-    {
-      id: 4,
       dates: "9 mai",
       dayLabel: "J4",
       title: "Antelope Canyon → Monument Valley",
-      desc: "Visite d'Antelope Canyon le matin, puis route vers Monument Valley.",
+      desc: "Visite d'Antelope Canyon vers midi (créneau à réserver), arrêt à Horseshoe Bend, puis route vers Monument Valley.",
       coords: [36.9980, -110.0980],
-      driveHours: 2,
-      driveLabel: "≈ 2h",
-      hotel: { checkin: "9 mai", checkout: "10 mai", nights: 1 }
+      driveHours: 6.5,
+      driveLabel: "≈ 4h30 jusqu'à Page, puis ≈ 2h jusqu'à Monument Valley",
+      hotel: { checkin: "9 mai", checkout: "10 mai", nights: 1 },
+      waypoints: [
+        {
+          name: "Page, AZ",
+          desc: "Antelope Canyon & Horseshoe Bend",
+          coords: [36.9147, -111.4558]
+        }
+      ]
     },
     {
-      id: 5,
+      id: 4,
       dates: "10-11 mai",
       dayLabel: "J5-6",
       title: "Grand Canyon",
@@ -61,7 +57,7 @@ const TRIP = {
       hotel: { checkin: "10 mai", checkout: "12 mai", nights: 2 }
     },
     {
-      id: 6,
+      id: 5,
       dates: "12 mai",
       dayLabel: "J7",
       title: "Joshua Tree National Park",
@@ -77,7 +73,7 @@ const TRIP = {
       ]
     },
     {
-      id: 7,
+      id: 6,
       dates: "13 mai",
       dayLabel: "J8",
       title: "Santa Barbara",
@@ -88,7 +84,7 @@ const TRIP = {
       hotel: { checkin: "13 mai", checkout: "14 mai", nights: 1 }
     },
     {
-      id: 8,
+      id: 7,
       dates: "14-15 mai",
       dayLabel: "J9-10",
       title: "Big Sur",
@@ -99,7 +95,7 @@ const TRIP = {
       hotel: { checkin: "14 mai", checkout: "16 mai", nights: 2 }
     },
     {
-      id: 9,
+      id: 8,
       dates: "16-18 mai",
       dayLabel: "J11-13",
       title: "San Francisco",
@@ -110,7 +106,7 @@ const TRIP = {
       hotel: { checkin: "16 mai", checkout: "19 mai", nights: 3 }
     },
     {
-      id: 10,
+      id: 9,
       dates: "19-22 mai",
       dayLabel: "J14-17",
       title: "Los Angeles (retour)",

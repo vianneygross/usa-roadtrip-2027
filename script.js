@@ -107,11 +107,11 @@
     markers.push(marker);
     latlngsForBounds.push(step.coords);
 
-    // Route 66 waypoints (small dots), if any
+    // Arrêts intermédiaires (petits points), si présents
     if (step.waypoints) {
       step.waypoints.forEach((wp) => {
         const wm = L.marker(wp.coords, { icon: waypointIcon() }).addTo(map);
-        wm.bindPopup(`<div class="popup-title">${wp.name}</div><div class="popup-desc">Arrêt Route 66</div>`);
+        wm.bindPopup(`<div class="popup-title">${wp.name}</div><div class="popup-desc">${wp.desc || "Arrêt Route 66"}</div>`);
         latlngsForBounds.push(wp.coords);
       });
     }
